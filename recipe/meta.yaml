@@ -1,4 +1,4 @@
-{% set version = '0.4.3' %}
+{% set version = "0.4.4" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/broom_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/broom/broom_{{ version }}.tar.gz
-  sha256: 2e261b40006432e787dc208c2a8943c6ae714968879dd3361ba1ee6ea5603785
+  sha256: 75485eb348b1ed2228eea3a7f77d64e7cc50ba2a344bc7dfdcae36e3f5413d20
 
 build:
   number: 0
