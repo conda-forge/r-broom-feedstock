@@ -31,7 +31,7 @@ requirements:
     - r-reshape2
     - r-stringr
     - r-tidyr
-
+    - r-backports
   run:
     - r-base
     - r-dplyr
@@ -41,6 +41,7 @@ requirements:
     - r-reshape2
     - r-stringr
     - r-tidyr
+    - r-backports
 
 test:
   commands:
