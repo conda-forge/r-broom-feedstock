@@ -1,4 +1,4 @@
-{% set version = '0.5.0' %}
+{% set version = '0.5.1' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -16,7 +16,7 @@ source:
 build:
   noarch: generic
   merge_build_host: True  # [win]
-  number: 1002
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
@@ -28,6 +28,7 @@ requirements:
     - r-base
     - r-backports
     - r-dplyr
+    - r-generics >=0.0.2
     - r-nlme
     - r-purrr
     - r-reshape2
@@ -38,6 +39,7 @@ requirements:
     - r-base
     - r-backports
     - r-dplyr
+    - r-generics >=0.0.2
     - r-nlme
     - r-purrr
     - r-reshape2
