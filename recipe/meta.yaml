@@ -1,4 +1,4 @@
-{% set version = '0.5.2' %}
+{% set version = "0.5.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/broom_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/broom/broom_{{ version }}.tar.gz
-  sha256: 16af7b446b24bc14461efbda9bea1521cf738c778c5e48fcc7bad45660a4ac62
+  sha256: 0d59b135bfa11c633c8ceec640342f026c5468c620984484bbc9adde1211f59c
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -54,6 +54,7 @@ test:
 about:
   home: http://github.com/tidyverse/broom
   license: MIT
+  license_file: LICENSE
   summary: Summarizes key information about statistical objects in tidy tibbles. This makes it
     easy to report results, create plots and consistently work with large numbers of
     models at once. Broom provides three verbs that each provide different types of
